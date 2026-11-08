@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TrustShield - Web Security</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h2>🛡️ TrustShield</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#scanner">URL Scanner</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Browse Smarter.<br>
+        <span>Stay Protected.</span>
+    </h1>
+
+    <p>
+        An intelligent web security platform
+        designed to detect suspicious websites
+        and phishing URLs.
+    </p>
+
+    <a href="#scanner" class="button">
+        Start Scanning →
+    </a>
+
+</section>
+
+<section class="scanner" id="scanner">
+
+    <h2>Website Security Scanner</h2>
+
+    <p>Enter a website URL to analyze its security.</p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="url"
+            placeholder="https://example.com">
+
+        <button onclick="scanWebsite()">
+            Analyze
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h2>Our Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🔍 Phishing Detection</h3>
+            <p>Identify suspicious URL patterns.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔐 Security Analysis</h3>
+            <p>Analyze basic website security indicators.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ SSL Verification</h3>
+            <p>Attempt HTTPS certificate verification.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About TrustShield</h2>
+
+    <p>
+        TrustShield is an educational cybersecurity
+        project designed to help users understand
+        potential website security risks.
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>🛡️ TrustShield</h3>
+
+    <p>Intelligent Web Security & Threat Detection Platform</p>
+
+    <p>© 2026 TrustShield. College Project.</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
